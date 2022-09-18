@@ -1,0 +1,10 @@
+collections:
+  # see https://galaxy.ansible.com/community/general
+  - name: community.general
+    version: 5.5.0
+roles:
+  # see https://galaxy.ansible.com/gekmihesg/openwrt
+  # see https://github.com/gekmihesg/ansible-openwrt
+  - name: gekmihesg.openwrt
+    # TODO how to set to a specific revision?
+    version: master
