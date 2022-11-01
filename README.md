@@ -35,3 +35,10 @@ Run the `lab.yml` playbook against the `openwrt` machine:
 ```bash
 ./ansible-playbook.sh --limit=openwrt lab.yml
 ```
+
+List this repository dependencies (and which have newer versions):
+
+```bash
+export GITHUB_COM_TOKEN='YOUR_GITHUB_PERSONAL_TOKEN'
+./renovate.sh
+```
