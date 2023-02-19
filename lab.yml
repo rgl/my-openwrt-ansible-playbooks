@@ -8,3 +8,6 @@
     - name: Install tcpdump
       community.general.opkg:
         name: tcpdump
+    - name: Instal dig
+      community.general.opkg:
+        name: bind-dig
