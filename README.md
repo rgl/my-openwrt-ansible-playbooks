@@ -12,25 +12,13 @@ Add your machines into the Ansible [`inventory.yml` file](inventory.yml).
 
 Review the [`lab.yml` playbook](lab.yml).
 
-See the facts about the `openwrt` machine:
-
-```bash
-./ansible.sh openwrt -m ansible.builtin.setup
-```
-
-Run an ad-hoc command in the `openwrt` machine:
-
-```bash
-./ansible.sh openwrt -a 'id'
-```
-
 Lint the `lab.yml` playbook:
 
 ```bash
 ./ansible-lint.sh --offline --parseable lab.yml
 ```
 
-Run the `lab.yml` playbook against the `openwrt` machine:
+Run the `lab.yml` playbook against the `openwrt` host group:
 
 ```bash
 ./ansible-playbook.sh --limit=openwrt lab.yml

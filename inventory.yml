@@ -1,6 +1,6 @@
-all:
+openwrt:
   hosts:
-    openwrt:
+    openwrt0:
       ansible_host: 192.168.1.254
   vars:
     # connection configuration.
