@@ -6,5 +6,5 @@
     - gekmihesg.openwrt
   tasks:
     - name: Install tcpdump
-      opkg:
+      community.general.opkg:
         name: tcpdump
