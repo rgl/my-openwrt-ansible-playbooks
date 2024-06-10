@@ -4,7 +4,7 @@
 
 This is My OpenWrt Ansible Playbooks Playground.
 
-This targets OpenWrt 22.03.
+This targets OpenWrt 23.05.
 
 # Usage
 
