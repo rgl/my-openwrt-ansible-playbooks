@@ -16,8 +16,8 @@ gitea_container_name="$(basename "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")
 gitea_version='1.23.7'
 
 # see https://hub.docker.com/r/renovate/renovate/tags
-# renovate: datasource=docker depName=renovate/renovate extractVersion=(?<version>.+)-slim$
-renovate_version='37.394.1'
+# renovate: datasource=docker depName=renovate/renovate
+renovate_version='39.238.2'
 
 # clean.
 echo 'Deleting existing Gitea...'
@@ -155,7 +155,7 @@ docker run \
   --env RENOVATE_PR_CONCURRENT_LIMIT \
   --env LOG_LEVEL=debug \
   --env LOG_FORMAT=json \
-  "renovate/renovate:$renovate_version-slim" \
+  "renovate/renovate:$renovate_version" \
   --platform=gitea \
   --git-url=endpoint \
   >tmp/renovate-log.json
