@@ -4,6 +4,6 @@ openwrt:
       ansible_host: 192.168.1.254
   vars:
     # connection configuration.
-    # see https://docs.ansible.com/ansible-core/2.13/collections/ansible/builtin/ssh_connection.html
+    # see https://docs.ansible.com/ansible-core/2.18/collections/ansible/builtin/ssh_connection.html
     ansible_user: root
     ansible_password: root
